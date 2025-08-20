@@ -1,0 +1,10 @@
+{
+  "tests/test_admin.py::test_login_admin": true,
+  "tests/test_admin.py::test_get_admin": true,
+  "tests/test_establishments.py::test_create_establishment_empty_name": true,
+  "tests/test_establishments.py::test_create_establishment_empty_location": true,
+  "tests/test_establishments.py::test_create_establishment_name_too_long": true,
+  "tests/test_establishments.py::test_create_establishment_location_too_long": true,
+  "tests/test_establishments.py::test_get_establishment": true,
+  "tests/test_sponsor.py::test_register_sponsor_invalid_email": true
+}

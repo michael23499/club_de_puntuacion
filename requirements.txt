@@ -1,0 +1,36 @@
+plaintext
+fastapi
+uvicorn
+pydantic
+motor
+python-jose
+passlib[bcrypt]
+python-multipart
+wheel
+pytest
+httpx
+pymongo
+bcrypt
+email_validator
+pytest-asyncio
+
+app
+    routes 
+            clients.py
+            __init__.py
+            establishments.py
+            sponsor.py
+            admin.py
+    tests
+            __init__.py
+            test_clients.py
+            test_establishments.py
+            test_sponsor.py
+            test_admin.py
+    venv  
+        backendtestenv esto tiene los scripts donde le digo activate para activar la variable de entorno y todo el codigo funciona es en esa variable
+    auth.py
+    database.py
+    main.py
+    models.py
+    requeriments.txt aca tengo algunos archivos que he usado para instalar algunas dependencias que estoy usando

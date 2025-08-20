@@ -1,0 +1,11 @@
+# Ignorar el entorno virtual
+venv/
+# Ignorar archivos de configuración de IDEs
+*.pyc
+__pycache__/
+*.pyo
+# Ignorar archivos de configuración de entornos
+.env
+# Ignorar archivos de logs
+*.log
+.pytest_cache/
