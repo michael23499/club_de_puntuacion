@@ -9,7 +9,7 @@ Para instalar las dependencias necesarias para ejecutar este proyecto, asegúrat
 Ejecuta el siguiente comando en tu terminal para crear un entorno virtual:
 
 ```bash
-python -m venv backendtestenv
+python -m venv venv/backendtestenv
 ```
 
 ### 2. Activar el Entorno Virtual Esto creará un entorno virtual llamado backendtestenv, procedemos activarlo con el siguiente comando en la terminal:
@@ -49,10 +49,14 @@ Verifica que todas las bibliotecas se hayan instalado correctamente con el coman
 Si falta alguna, puedes instalarla ejecutando:
 `pip install <nombre_de_la_biblioteca>`
 
+y creamos el archivo .env con la siguiente configuración:
+MONGODB_URI=mongodb://localhost:27017
+MONGODB_DATABASE=club_de_puntuacion
+
 ### 5. Ejecutar la Aplicación
 
 Después de instalar las dependencias, ejecuta la aplicación utilizando el siguiente comando:
-`uvicorn main:app --reload`
+`uvicorn app.main:app --reload`
 
 Esto iniciará el servidor de desarrollo, y podrás acceder a la API en http://127.0.0.1:8000. También se puede acceder a la documentación de Swagger UI en: http://127.0.0.1:8000/docs#/. Se recomienda activar la autorización del SwaggerUI utilizando OAuth2PasswordBearer (OAuth2, password) con el nombre de usuario y contraseña de un establecimiento registrado en la base de datos (Insertar datos iniciales con el script asignado en la línea 77).
 
